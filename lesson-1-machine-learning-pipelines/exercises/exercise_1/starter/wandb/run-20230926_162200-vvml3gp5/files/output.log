@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "upload_artifact.py", line 72, in <module>
+    go(args)
+  File "upload_artifact.py", line 42, in go
+    run.log_artifact(artifact)
+NameError: name 'run' is not defined

@@ -1,0 +1,89 @@
+{
+    "os": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.10",
+    "python": "3.8.17",
+    "heartbeatAt": "2023-09-26T15:40:11.268601",
+    "startedAt": "2023-09-26T15:40:10.127932",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--input_file",
+        "zen.txt",
+        "--artifact_name",
+        "zen_of_python",
+        "--artifact_type",
+        "text_file",
+        "--artifact_description",
+        "20 aphorisms about writing good python code"
+    ],
+    "state": "running",
+    "program": "upload_artifact.py",
+    "codePathLocal": "upload_artifact.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py",
+    "git": {
+        "remote": "https://github.com/charlykop/udacity_mlops_c2_1.git",
+        "commit": "f8ceef1ef5f8d5e8ac5995dbf09d0c6d8be15827"
+    },
+    "email": null,
+    "root": "/home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "LAPTOP-IL8H0HC6",
+    "username": "carlotta",
+    "executable": "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1991.9979999999998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1991.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1991.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1991.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1991.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1991.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1991.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1991.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1991.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 6.882568359375
+        }
+    },
+    "memory": {
+        "total": 7.68939208984375
+    }
+}

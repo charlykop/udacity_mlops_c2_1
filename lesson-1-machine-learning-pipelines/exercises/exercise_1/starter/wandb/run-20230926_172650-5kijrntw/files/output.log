@@ -1,0 +1,26 @@
+
+2023-09-26 17:26:57,479 Getting artifact
+Traceback (most recent call last):
+  File "use_artifact.py", line 46, in <module>
+    go(args)
+  File "use_artifact.py", line 22, in go
+    artifact.download(root='/download/')
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/sdk/artifacts/artifact.py", line 1750, in download
+    future.result()
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/sdk/artifacts/artifact.py", line 1713, in _download_entry
+    entry.download(root)
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/sdk/artifacts/artifact_manifest_entry.py", line 136, in download
+    str(filesystem.copy_or_overwrite_changed(cache_path, dest_path))
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/sdk/lib/filesystem.py", line 165, in copy_or_overwrite_changed
+    target_path = os.path.join(mkdir_allow_fallback(dir_name), file_name)
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/sdk/lib/filesystem.py", line 64, in mkdir_allow_fallback
+    os.makedirs(new_name, exist_ok=True)
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/download'

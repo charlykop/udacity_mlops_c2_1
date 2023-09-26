@@ -1,0 +1,7 @@
+2023-09-26 17:22:37,226 Getting artifact
+Traceback (most recent call last):
+  File "use_artifact.py", line 46, in <module>
+    go(args)
+  File "use_artifact.py", line 22, in go
+    artifact.download(target_dir='/download/')
+TypeError: download() got an unexpected keyword argument 'target_dir'

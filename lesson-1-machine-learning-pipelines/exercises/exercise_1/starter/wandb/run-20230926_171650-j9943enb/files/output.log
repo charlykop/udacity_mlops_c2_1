@@ -1,0 +1,31 @@
+2023-09-26 17:16:55,230 Getting artifact
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/apis/public.py", line 1036, in artifact
+    artifact = wandb.Artifact._from_name(
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/sdk/artifacts/artifact.py", line 254, in _from_name
+    attrs = response.get("project", {}).get("artifact")
+AttributeError: 'NoneType' object has no attribute 'get'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "use_artifact.py", line 46, in <module>
+    go(args)
+  File "use_artifact.py", line 21, in go
+    artifact = run.use_artifact(str(args.artifact_name))
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 370, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 360, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 2734, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/apis/public.py", line 1036, in artifact
+    artifact = wandb.Artifact._from_name(
+  File "/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/lib/python3.8/site-packages/wandb/sdk/artifacts/artifact.py", line 254, in _from_name
+    attrs = response.get("project", {}).get("artifact")
+wandb.errors.CommError: 'NoneType' object has no attribute 'get'

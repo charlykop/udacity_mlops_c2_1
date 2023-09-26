@@ -1,0 +1,180 @@
+2023-09-26 16:24:42,933 INFO    StreamThr :20485 [internal.py:wandb_internal():86] W&B internal server running at pid: 20485, started at: 2023-09-26 16:24:42.931610
+2023-09-26 16:24:42,937 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: status
+2023-09-26 16:24:42,943 INFO    WriterThread:20485 [datastore.py:open_for_write():85] open: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/run-b468h7jl.wandb
+2023-09-26 16:24:42,944 DEBUG   SenderThread:20485 [sender.py:send():379] send: header
+2023-09-26 16:24:42,951 DEBUG   SenderThread:20485 [sender.py:send():379] send: run
+2023-09-26 16:24:43,469 INFO    SenderThread:20485 [dir_watcher.py:__init__():211] watching files in: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files
+2023-09-26 16:24:43,469 INFO    SenderThread:20485 [sender.py:_start_run_threads():1121] run started: b468h7jl with start time 1695738282.931034
+2023-09-26 16:24:43,481 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: check_version
+2023-09-26 16:24:43,482 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: check_version
+2023-09-26 16:24:43,669 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: run_start
+2023-09-26 16:24:43,671 DEBUG   HandlerThread:20485 [system_info.py:__init__():32] System info init
+2023-09-26 16:24:43,671 DEBUG   HandlerThread:20485 [system_info.py:__init__():47] System info init done
+2023-09-26 16:24:43,671 INFO    HandlerThread:20485 [system_monitor.py:start():181] Starting system monitor
+2023-09-26 16:24:43,672 INFO    SystemMonitor:20485 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-26 16:24:43,674 INFO    HandlerThread:20485 [system_monitor.py:probe():201] Collecting system info
+2023-09-26 16:24:43,674 INFO    SystemMonitor:20485 [interfaces.py:start():190] Started cpu monitoring
+2023-09-26 16:24:43,677 INFO    SystemMonitor:20485 [interfaces.py:start():190] Started disk monitoring
+2023-09-26 16:24:43,678 INFO    SystemMonitor:20485 [interfaces.py:start():190] Started memory monitoring
+2023-09-26 16:24:43,681 INFO    SystemMonitor:20485 [interfaces.py:start():190] Started network monitoring
+2023-09-26 16:24:43,697 DEBUG   HandlerThread:20485 [system_info.py:probe():196] Probing system
+2023-09-26 16:24:43,989 DEBUG   HandlerThread:20485 [system_info.py:_probe_git():181] Probing git
+2023-09-26 16:24:44,011 DEBUG   HandlerThread:20485 [system_info.py:_probe_git():189] Probing git done
+2023-09-26 16:24:44,012 DEBUG   HandlerThread:20485 [system_info.py:probe():244] Probing system done
+2023-09-26 16:24:44,012 DEBUG   HandlerThread:20485 [system_monitor.py:probe():210] {'os': 'Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.10', 'python': '3.8.17', 'heartbeatAt': '2023-09-26T14:24:43.697293', 'startedAt': '2023-09-26T14:24:42.908517', 'docker': None, 'cuda': None, 'args': ('--input_file', 'zen.txt', '--artifact_name', 'zen_of_python', '--artifact_type', 'text_file', '--artifact_description', '20 aphorisms about writing good python code'), 'state': 'running', 'program': 'upload_artifact.py', 'codePathLocal': 'upload_artifact.py', 'codePath': 'lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py', 'git': {'remote': 'https://github.com/charlykop/udacity_mlops_c2_1.git', 'commit': 'f8ceef1ef5f8d5e8ac5995dbf09d0c6d8be15827'}, 'email': None, 'root': '/home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises', 'host': 'LAPTOP-IL8H0HC6', 'username': 'carlotta', 'executable': '/home/carlotta/miniconda3/envs/udacity_mlops_c2_1/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1991.9979999999998, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 1991.998, 'min': 0.0, 'max': 0.0}, {'current': 1991.998, 'min': 0.0, 'max': 0.0}, {'current': 1991.998, 'min': 0.0, 'max': 0.0}, {'current': 1991.998, 'min': 0.0, 'max': 0.0}, {'current': 1991.998, 'min': 0.0, 'max': 0.0}, {'current': 1991.998, 'min': 0.0, 'max': 0.0}, {'current': 1991.998, 'min': 0.0, 'max': 0.0}, {'current': 1991.998, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 6.8809814453125}}, 'memory': {'total': 7.68939208984375}}
+2023-09-26 16:24:44,012 INFO    HandlerThread:20485 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-26 16:24:44,012 INFO    HandlerThread:20485 [system_monitor.py:probe():214] Publishing system info
+2023-09-26 16:24:44,012 DEBUG   HandlerThread:20485 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-09-26 16:24:44,013 DEBUG   HandlerThread:20485 [system_info.py:_save_pip():68] Saving pip packages done
+2023-09-26 16:24:44,013 DEBUG   HandlerThread:20485 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-09-26 16:24:44,472 INFO    Thread-12 :20485 [dir_watcher.py:_on_file_created():271] file/dir created: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/requirements.txt
+2023-09-26 16:24:44,474 INFO    Thread-12 :20485 [dir_watcher.py:_on_file_created():271] file/dir created: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/conda-environment.yaml
+2023-09-26 16:24:47,227 DEBUG   HandlerThread:20485 [system_info.py:_save_conda():87] Saving conda packages done
+2023-09-26 16:24:47,229 INFO    HandlerThread:20485 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-26 16:24:47,234 DEBUG   SenderThread:20485 [sender.py:send():379] send: files
+2023-09-26 16:24:47,235 INFO    SenderThread:20485 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-09-26 16:24:47,249 DEBUG   SenderThread:20485 [sender.py:send():379] send: telemetry
+2023-09-26 16:24:47,258 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 16:24:47,263 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 16:24:47,264 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: stop_status
+2023-09-26 16:24:47,472 INFO    Thread-12 :20485 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/conda-environment.yaml
+2023-09-26 16:24:47,473 INFO    Thread-12 :20485 [dir_watcher.py:_on_file_created():271] file/dir created: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/wandb-metadata.json
+2023-09-26 16:24:47,631 DEBUG   SenderThread:20485 [sender.py:send():379] send: exit
+2023-09-26 16:24:47,631 INFO    SenderThread:20485 [sender.py:send_exit():584] handling exit code: 1
+2023-09-26 16:24:47,632 INFO    SenderThread:20485 [sender.py:send_exit():586] handling runtime: 3
+2023-09-26 16:24:47,637 INFO    SenderThread:20485 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-26 16:24:47,638 INFO    SenderThread:20485 [sender.py:send_exit():592] send defer
+2023-09-26 16:24:47,639 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:47,639 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-26 16:24:47,641 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:47,641 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-09-26 16:24:47,641 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 1
+2023-09-26 16:24:47,642 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:47,642 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-26 16:24:47,643 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:47,643 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-09-26 16:24:47,643 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 2
+2023-09-26 16:24:47,644 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:47,645 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-26 16:24:47,645 INFO    HandlerThread:20485 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-26 16:24:47,646 DEBUG   SystemMonitor:20485 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-26 16:24:47,646 DEBUG   SystemMonitor:20485 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-26 16:24:47,646 DEBUG   SystemMonitor:20485 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-26 16:24:47,648 INFO    HandlerThread:20485 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-26 16:24:47,649 INFO    HandlerThread:20485 [interfaces.py:finish():202] Joined disk monitor
+2023-09-26 16:24:47,650 INFO    HandlerThread:20485 [interfaces.py:finish():202] Joined memory monitor
+2023-09-26 16:24:47,652 INFO    HandlerThread:20485 [interfaces.py:finish():202] Joined network monitor
+2023-09-26 16:24:47,654 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:47,654 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-09-26 16:24:47,655 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 3
+2023-09-26 16:24:47,656 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:47,657 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-26 16:24:47,658 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:47,658 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-09-26 16:24:47,658 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 4
+2023-09-26 16:24:47,659 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:47,659 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-26 16:24:47,661 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:47,661 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-09-26 16:24:47,662 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 5
+2023-09-26 16:24:47,662 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:47,662 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-26 16:24:47,664 DEBUG   SenderThread:20485 [sender.py:send():379] send: summary
+2023-09-26 16:24:47,665 INFO    SenderThread:20485 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-26 16:24:47,666 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:47,667 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-09-26 16:24:47,667 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 6
+2023-09-26 16:24:47,667 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:47,668 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-26 16:24:47,669 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:47,670 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-09-26 16:24:47,676 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 16:24:47,921 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 7
+2023-09-26 16:24:47,922 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:47,922 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-26 16:24:47,923 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:47,923 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-09-26 16:24:47,995 INFO    wandb-upload_0:20485 [upload_job.py:push():131] Uploaded file /tmp/tmpf1b4mc0_wandb/8ao80rl9-wandb-metadata.json
+2023-09-26 16:24:48,319 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-26 16:24:48,473 INFO    Thread-12 :20485 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/config.yaml
+2023-09-26 16:24:48,475 INFO    Thread-12 :20485 [dir_watcher.py:_on_file_created():271] file/dir created: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/output.log
+2023-09-26 16:24:48,476 INFO    Thread-12 :20485 [dir_watcher.py:_on_file_created():271] file/dir created: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/wandb-summary.json
+2023-09-26 16:24:49,635 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 8
+2023-09-26 16:24:49,636 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: poll_exit
+2023-09-26 16:24:49,638 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:49,639 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-26 16:24:49,640 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:49,640 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-09-26 16:24:49,641 INFO    SenderThread:20485 [job_builder.py:build():281] Attempting to build job artifact
+2023-09-26 16:24:49,642 INFO    SenderThread:20485 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-09-26 16:24:49,650 INFO    SenderThread:20485 [job_builder.py:build():369] adding wandb-job metadata file
+2023-09-26 16:24:49,667 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 9
+2023-09-26 16:24:49,668 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:49,668 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-26 16:24:49,670 DEBUG   SenderThread:20485 [sender.py:send():379] send: artifact
+2023-09-26 16:24:50,476 INFO    Thread-12 :20485 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/output.log
+2023-09-26 16:24:50,719 INFO    SenderThread:20485 [sender.py:send_artifact():1453] sent artifact job-https___github.com_charlykop_udacity_mlops_c2_1.git_lesson-..rning-pipelines_exercises_exercise_1_starter_upload_artifact.py - {'id': 'QXJ0aWZhY3Q6NTg0NjE4NjUw', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwMTIzOTU2Nw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTg0NjE4NjUw', 'versionIndex': 0}}}
+2023-09-26 16:24:50,719 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:50,720 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-09-26 16:24:50,720 INFO    SenderThread:20485 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-09-26 16:24:51,479 INFO    SenderThread:20485 [dir_watcher.py:finish():388] scan: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files
+2023-09-26 16:24:51,480 INFO    SenderThread:20485 [dir_watcher.py:finish():402] scan save: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/wandb-metadata.json wandb-metadata.json
+2023-09-26 16:24:51,481 INFO    SenderThread:20485 [dir_watcher.py:finish():402] scan save: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/conda-environment.yaml conda-environment.yaml
+2023-09-26 16:24:51,481 INFO    SenderThread:20485 [dir_watcher.py:finish():402] scan save: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/requirements.txt requirements.txt
+2023-09-26 16:24:51,483 INFO    SenderThread:20485 [dir_watcher.py:finish():402] scan save: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/config.yaml config.yaml
+2023-09-26 16:24:51,508 INFO    SenderThread:20485 [dir_watcher.py:finish():402] scan save: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/wandb-summary.json wandb-summary.json
+2023-09-26 16:24:51,517 INFO    SenderThread:20485 [dir_watcher.py:finish():402] scan save: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/output.log output.log
+2023-09-26 16:24:51,531 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 10
+2023-09-26 16:24:51,533 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:51,533 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 10
+2023-09-26 16:24:51,540 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:51,541 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-09-26 16:24:51,541 INFO    SenderThread:20485 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-26 16:24:51,890 INFO    wandb-upload_0:20485 [upload_job.py:push():131] Uploaded file /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/conda-environment.yaml
+2023-09-26 16:24:52,039 INFO    wandb-upload_1:20485 [upload_job.py:push():131] Uploaded file /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/requirements.txt
+2023-09-26 16:24:52,110 INFO    wandb-upload_3:20485 [upload_job.py:push():131] Uploaded file /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/wandb-summary.json
+2023-09-26 16:24:52,113 INFO    wandb-upload_4:20485 [upload_job.py:push():131] Uploaded file /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/output.log
+2023-09-26 16:24:52,117 INFO    wandb-upload_2:20485 [upload_job.py:push():131] Uploaded file /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/files/config.yaml
+2023-09-26 16:24:52,321 INFO    Thread-11 :20485 [sender.py:transition_state():612] send defer: 11
+2023-09-26 16:24:52,323 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:52,324 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 11
+2023-09-26 16:24:52,327 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:52,327 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-09-26 16:24:52,327 INFO    SenderThread:20485 [file_pusher.py:join():181] waiting for file pusher
+2023-09-26 16:24:52,328 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 12
+2023-09-26 16:24:52,330 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:52,330 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 12
+2023-09-26 16:24:52,332 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:52,332 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-09-26 16:24:52,332 INFO    SenderThread:20485 [file_stream.py:finish():594] file stream finish called
+2023-09-26 16:24:52,526 INFO    SenderThread:20485 [file_stream.py:finish():598] file stream finish is done
+2023-09-26 16:24:52,526 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 13
+2023-09-26 16:24:52,527 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:52,527 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 13
+2023-09-26 16:24:52,529 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:52,529 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-09-26 16:24:52,530 INFO    SenderThread:20485 [sender.py:transition_state():612] send defer: 14
+2023-09-26 16:24:52,531 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 16:24:52,532 INFO    HandlerThread:20485 [handler.py:handle_request_defer():170] handle defer: 14
+2023-09-26 16:24:52,535 DEBUG   SenderThread:20485 [sender.py:send():379] send: final
+2023-09-26 16:24:52,535 DEBUG   SenderThread:20485 [sender.py:send():379] send: footer
+2023-09-26 16:24:52,536 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: defer
+2023-09-26 16:24:52,537 INFO    SenderThread:20485 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-09-26 16:24:52,539 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-26 16:24:52,541 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: poll_exit
+2023-09-26 16:24:52,543 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: server_info
+2023-09-26 16:24:52,546 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: server_info
+2023-09-26 16:24:52,556 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: get_summary
+2023-09-26 16:24:52,560 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: sampled_history
+2023-09-26 16:24:52,562 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 16:24:52,564 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: job_info
+2023-09-26 16:24:52,731 DEBUG   SenderThread:20485 [sender.py:send_request():406] send_request: job_info
+2023-09-26 16:24:52,733 INFO    MainThread:20485 [wandb_run.py:_footer_history_summary_info():3557] rendering history
+2023-09-26 16:24:52,734 INFO    MainThread:20485 [wandb_run.py:_footer_history_summary_info():3589] rendering summary
+2023-09-26 16:24:52,734 INFO    MainThread:20485 [wandb_run.py:_footer_sync_info():3516] logging synced files
+2023-09-26 16:24:52,736 DEBUG   HandlerThread:20485 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-26 16:24:52,737 INFO    HandlerThread:20485 [handler.py:finish():840] shutting down handler
+2023-09-26 16:24:53,566 INFO    WriterThread:20485 [datastore.py:close():294] close: /home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/wandb/run-20230926_162442-b468h7jl/run-b468h7jl.wandb
+2023-09-26 16:24:53,732 INFO    SenderThread:20485 [sender.py:finish():1531] shutting down sender
+2023-09-26 16:24:53,732 INFO    SenderThread:20485 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-26 16:24:53,732 INFO    SenderThread:20485 [file_pusher.py:join():181] waiting for file pusher

@@ -1,5 +1,6 @@
-The Zen of Python, by Tim Peters
 
+2023-09-26 17:47:17,026 Getting artifact
+The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -19,5 +20,6 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-
 I added something!
+2023-09-26 17:47:18,982 Artifact_path is ./artifacts/zen_of_python:latest/zen.txt
+2023-09-26 17:47:18,983 Artifact content:

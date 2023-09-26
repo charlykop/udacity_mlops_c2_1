@@ -1,5 +1,8 @@
-The Zen of Python, by Tim Peters
 
+2023-09-26 17:29:26,296 Getting artifact
+[34m[1mwandb[39m[22m:   1 of 1 files downloaded.
+2023-09-26 17:29:28,694 Artifact content:
+The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -19,5 +22,3 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-
-I added something!

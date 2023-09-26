@@ -18,8 +18,13 @@ def go(args):
 
     # YOUR CODE HERE: get the artifact and store its local path in the variable "artifact_path"
     # HINT: you can get the artifact path by using the "file()" method
+    artifact = run.use_artifact(args.artifact_name)
+    # Download Befehl ist anscheinend nicht notwendig
+    # artifact.download(root='/home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/download')
 
     artifact_path = artifact.file()
+    logger.info(f"Artifact_path is {artifact_path}")
+    
 
     logger.info("Artifact content:")
     with open(artifact_path, "r") as fp:
@@ -40,3 +45,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     go(args)
+
+
+    # Call script with: python use_artifact.py --artifact_name exercise_1/zen_of_python:latest
