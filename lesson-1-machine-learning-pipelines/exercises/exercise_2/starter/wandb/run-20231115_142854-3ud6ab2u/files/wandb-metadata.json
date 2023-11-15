@@ -1,0 +1,31 @@
+{
+    "os": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.9.18",
+    "heartbeatAt": "2023-11-15T13:28:55.935955",
+    "startedAt": "2023-11-15T13:28:54.271990",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--file_url",
+        "https://raw.githubusercontent.com/scikit-learn/scikit-learn/4dfdfb4e1bb3719628753a4ece995a1b2fa5312a/sklearn/datasets/data/iris.csv",
+        "--artifact_name",
+        "iris",
+        "--artifact_type",
+        "raw_data",
+        "--artifact_description",
+        "This data sets consists of 3 different types of irises\u2019 (Setosa, Versicolour, and Virginica) petal and sepal length"
+    ],
+    "state": "running",
+    "program": "/home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/starter/download_data.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_2/starter/download_data.py",
+    "git": {
+        "remote": "https://github.com/charlykop/udacity_mlops_c2_1.git",
+        "commit": "36fc3d9d5b1d9b1f38f4d9b125471f7415ab5f9c"
+    },
+    "email": "charly-ko@hotmail.de",
+    "root": "/home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "LAPTOP-IL8H0HC6",
+    "username": "carlotta",
+    "executable": "/home/carlotta/miniconda3/envs/mlflow-7e6d59c499b1da6275d0a1012389f7efb04dcc65/bin/python"
+}

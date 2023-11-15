@@ -1,0 +1,15 @@
+artifact_uri: file:///home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/starter/mlruns/0/22a591121f87428dafcfdcc45de3af36/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 22a591121f87428dafcfdcc45de3af36
+run_name: resilient-grouse-67
+run_uuid: 22a591121f87428dafcfdcc45de3af36
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699369850844
+status: 1
+tags: []
+user_id: carlotta

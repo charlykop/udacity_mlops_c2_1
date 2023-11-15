@@ -1,0 +1,15 @@
+artifact_uri: file:///home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/starter/mlruns/0/a8ed4c1da47e4176a2fe31e2e79e2e11/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a8ed4c1da47e4176a2fe31e2e79e2e11
+run_name: zealous-skunk-104
+run_uuid: a8ed4c1da47e4176a2fe31e2e79e2e11
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699369095292
+status: 1
+tags: []
+user_id: carlotta
