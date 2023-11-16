@@ -1,0 +1,15 @@
+artifact_uri: file:///home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/mlruns/0/0ed21ec972034b9c86b29841883ec911/artifacts
+end_time: 1700058582385
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 0ed21ec972034b9c86b29841883ec911
+run_uuid: 0ed21ec972034b9c86b29841883ec911
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1700058545220
+status: 3
+tags: []
+user_id: carlotta

@@ -1,0 +1,31 @@
+{
+    "os": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-debian-bookworm-sid",
+    "python": "3.7.12",
+    "heartbeatAt": "2023-11-16T11:00:15.994003",
+    "startedAt": "2023-11-16T11:00:14.813750",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "iris.csv:latest",
+        "--artifact_name",
+        "cleaned_data.csv",
+        "--artifact_type",
+        "processed_data",
+        "--artifact_description",
+        "Cleaned data"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/run.py",
+    "git": {
+        "remote": "https://github.com/charlykop/udacity_mlops_c2_1.git",
+        "commit": "b0fb134a6bf1b74226c7298972343ec4804c5b0d"
+    },
+    "email": "charly-ko@hotmail.de",
+    "root": "/home/carlotta/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "LAPTOP-IL8H0HC6",
+    "username": "carlotta",
+    "executable": "/home/carlotta/miniconda3/envs/mlflow-a88935c6bc2c059f505e7bd75c33d24a9771b45b/bin/python"
+}

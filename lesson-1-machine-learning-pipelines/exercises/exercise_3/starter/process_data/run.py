@@ -13,8 +13,10 @@ logger = logging.getLogger()
 
 def go(args):
 
+    print('Start der Funktion process_data')
     run = wandb.init(job_type="process_data")
 
+    print('run wurde gestartet')
     logger.info("Downloading artifact")
     artifact = run.use_artifact(args.input_artifact)
     artifact_path = artifact.file()

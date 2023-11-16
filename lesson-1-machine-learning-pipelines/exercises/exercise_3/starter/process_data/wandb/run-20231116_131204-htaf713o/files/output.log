@@ -1,0 +1,6 @@
+run wurde gestartet
+2023-11-16 13:12:05,277 Downloading artifact
+2023-11-16 13:12:06,543 Performing t-SNE
+2023-11-16 13:12:07,667 Uploading image to W&B
+2023-11-16 13:12:07,782 Creating artifact
+2023-11-16 13:12:07,793 Logging artifact

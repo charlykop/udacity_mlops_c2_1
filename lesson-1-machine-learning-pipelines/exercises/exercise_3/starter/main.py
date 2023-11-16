@@ -33,6 +33,17 @@ def go(config: DictConfig):
     # to the "process_data" component
     ##################
 
+    _ = mlflow.run(
+        os.path.join(root_path, "process_data"),
+        "main",
+        parameters={
+            "input_artifact": "iris.csv:latest",
+            "artifact_name": "cleaned_data.csv",
+            "artifact_type": "processed_data",
+            "artifact_description": "Cleaned data"
+        },
+    )
+
 
 
 if __name__ == "__main__":
