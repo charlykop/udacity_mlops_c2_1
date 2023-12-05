@@ -1,0 +1,13 @@
+name: preprocessing_data
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy=1.20
+  - pandas=1.2.3
+  - pip=20.3.3
+  - pyarrow=2.0
+  - pip:
+      - protobuf==3.19.0
+      - wandb==0.10.31
