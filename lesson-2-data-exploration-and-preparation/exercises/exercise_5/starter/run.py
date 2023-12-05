@@ -43,10 +43,8 @@ def go(args):
     logger.info("Add artifact and log artifact.")
     output_artifact.add_file(filename)
     run.log_artifact(output_artifact)
-    run.finish()
-
-
-
+    
+    # run.finish() --> nicht notwendig, wenn nur ein run im Skript
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
