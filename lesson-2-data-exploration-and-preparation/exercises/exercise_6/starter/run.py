@@ -29,7 +29,8 @@ def go(args):
 
     # USE train_test_split here to split df according to the provided args.test_size
     # random_state to set random state for split
-    # stratified to describe how to split (if set then values is class label (column name))
+    # stratified ensure that same distribution in train and test (if set then equal distribution in class label (column name))
+    ## if stratified is 'null' --> None then not equal distribution
     splits["train"], splits["test"] = train_test_split(
         df, 
         test_size = args.test_size, 
