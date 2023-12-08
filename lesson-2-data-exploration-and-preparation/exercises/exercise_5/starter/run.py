@@ -25,6 +25,9 @@ def go(args):
     df = df.drop_duplicates().reset_index(drop=True)
 
     logger.info("Add new feature - combination of features titel and son_name.")
+    # These are missing values that are due to an old version of the data. On new data,
+    # because of a change in the web form used to register new songs, the title and the
+    # song name are already empty strings
     df['title'].fillna(value='', inplace=True)
     df['song_name'].fillna(value='', inplace=True)
     df['text_feature'] = df['title'] + ' ' + df['song_name']
@@ -43,6 +46,8 @@ def go(args):
     logger.info("Add artifact and log artifact.")
     output_artifact.add_file(filename)
     run.log_artifact(output_artifact)
+
+    os.remove(filename)
     
     # run.finish() --> nicht notwendig, wenn nur ein run im Skript
 
