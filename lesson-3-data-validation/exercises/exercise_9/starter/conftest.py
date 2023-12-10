@@ -1,6 +1,10 @@
 import pytest
 import pandas as pd
 import wandb
+import logging
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
+logger = logging.getLogger()
 
 
 run = wandb.init(project="exercise_9", job_type="data_tests")
@@ -9,13 +13,12 @@ run = wandb.init(project="exercise_9", job_type="data_tests")
 def pytest_addoption(parser):
     parser.addoption("--reference_artifact", action="store")
     parser.addoption("--sample_artifact", action="store")
-
-    # COMPLETE HERE: add the option for ks_alpha
+    parser.addoption("--ks_alpha", action="store")
 
 
 @pytest.fixture(scope="session")
 def data(request):
-
+    
     reference_artifact = request.config.option.reference_artifact
 
     if reference_artifact is None:
@@ -28,9 +31,11 @@ def data(request):
 
     local_path = run.use_artifact(reference_artifact).file()
     sample1 = pd.read_csv(local_path)
+    logging.info("reference_artifact was loaded.")
 
     local_path = run.use_artifact(sample_artifact).file()
     sample2 = pd.read_csv(local_path)
+    logging.info("sample_artifact was loaded.")
 
     return sample1, sample2
 
@@ -40,3 +45,11 @@ def ks_alpha(request):
 
     # COMPLETE HERE: read the option ks_alpha from the command line,
     # and return it as a float
+    ks_alpha = request.config.option.ks_alpha
+
+    logging.info(f"ks_alpha is {ks_alpha}.")
+
+    if ks_alpha is None: 
+        pytest.fail("--ks_alpha missing on command line")
+
+    return float(ks_alpha)
